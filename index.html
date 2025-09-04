@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alternador de Tema</title>
+</head>
+<body>
+
+<!-- Header com toggle -->
+<header class="header">
+  <div class="container">
+    <h1 class="brand">🎨 Alternador de Tema</h1>
+    
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌙</span>
+      <span class="toggle-text">Modo Escuro</span>
+    </button>
+  </div>
+</header>
+
+<!-- Main content -->
+<main class="main">
+  <div class="container">
+    <!-- Hero section -->
+    <section class="hero fade-in">
+      <h2 class="hero-title">Mudança de Tema Dinâmica</h2>
+      <p class="hero-description">
+        Um projeto minimalista para alternar entre <strong>modo claro</strong> e <strong>modo escuro</strong>.
+      </p>
+    </section>
+
+      <!-- Features cards -->
+    <section class="features fade-in">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Instantâneo</h3>
+        <p>Troca suave de tema com transições elegantes.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">💾</div>
+        <h3>Persistente</h3>
+        <p>Preferência salva no navegador usando localStorage.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Minimalista</h3>
+        <p>Design limpo, moderno e focado em usabilidade.</p>
+      </div>
+    </section>
+
+     <!-- Status section -->
+    <section class="status fade-in">
+      <div class="status-card">
+        <h3>Status do Tema</h3>
+        <div class="status-info">
+          <div class="status-item">
+            <span class="label">Tema atual:</span>
+            <span class="value" id="currentTheme">Claro</span>
+          </div>
+          <div class="status-item">
+            <span class="label">Salvo em:</span>
+            <span class="value">localStorage</span>
+          </div>
+          <div class="status-item">
+            <span class="label">Última alternância:</span>
+            <span class="value" id="lastChanged">--</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Projeto Alternador de Tema. Criado para aprendizado.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
